@@ -160,8 +160,9 @@ aside li::before {
 /* add some padding */
 h1,
 .cv_about,
-li:last-of-type {
-  padding-bottom: 4rem;
+li:last-of-type,
+aside p:last-of-type {
+  padding-bottom: 3rem;
 }
 
 aside p a {
