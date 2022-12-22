@@ -1,0 +1,171 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+
+/* add some vars here */
+:root {
+  /* color variables */
+  --color1: #000000; /* midnight black */
+  --color2: #ffffff; /* white */
+  --color3: #595959; /* dark gray */
+  --color4: #e5e5e5; /* light gray */
+  --color5: #fb6d3a; /* highlight orange */
+
+  /* font variables */
+  --ff-text: "Montserrat", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+/* css reset for things */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+html {
+  font-family: var(--ff-text);
+  font-weight: var(--fw-reg);
+
+  /* set reference font size */
+  font-size: 10px;
+}
+
+body {
+  /* arrange 2 column layout */
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: center;
+  min-width: 920px;
+}
+
+body,
+aside {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+body {
+  background-color: var(--color4);
+  color: var(--color3);
+  padding: 4rem;
+}
+
+main {
+  background-color: var(--color2);
+  width: 830px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 4rem 8rem 4rem 4rem;
+  text-align: justify;
+}
+
+aside {
+  background-color: #1e2939;
+  width: 370px;
+  min-width: 300px;
+}
+
+a {
+  color: var(--color3);
+  text-decoration: underline;
+}
+
+.cv_job {
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold);
+  color: var(--color1);
+  padding: 6rem 0 1rem 0;
+}
+
+.cv_bold {
+  font-weight: var(--fw-bold);
+}
+
+.cv_pic img {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.cv_aside {
+  padding-left: 4rem;
+}
+
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+}
+
+h1,
+.cv_category,
+.cv_subcategory {
+  color: var(--color1);
+}
+
+.cv_category {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  margin: 1.2rem 0;
+}
+
+.cv_subcategory {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin: 1.1rem 0;
+}
+
+.cv_timeline {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #a8a8a8;
+  margin: 0.8rem 0;
+}
+
+.cv_highlight {
+  color: var(--color5);
+}
+
+aside,
+aside .cv_category {
+  color: var(--color2);
+}
+
+/* add padding to lists */
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+/* make list numbers bold */
+ol > li::marker {
+  font-weight: 700;
+  color: #000000;
+}
+
+/* make aside list bullets orange-y */
+aside ul {
+  list-style: none;
+  padding: 0.4rem;
+}
+
+aside li::before {
+  content: "•";
+  color: var(--color5);
+  display: inline-block;
+  width: 1rem;
+}
+
+/* add some padding */
+h1,
+.cv_about,
+li:last-of-type {
+  padding-bottom: 4rem;
+}
+
+aside p a {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  color: var(--color4);
+}
